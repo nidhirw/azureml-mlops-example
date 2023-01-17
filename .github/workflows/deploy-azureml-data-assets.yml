@@ -52,7 +52,6 @@ jobs:
     name: Register Data Assets in Production
     runs-on: ubuntu-latest
     needs: register-data-assets-staging
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     environment:
       name: Production
